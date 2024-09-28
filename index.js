@@ -1,5 +1,5 @@
 
-
+//callback hell
 function getData(callback) {
   setTimeout(() => {
       console.log('Introduced');
@@ -22,11 +22,20 @@ function saveData(processedData, callback) {
 }
 
 
-
 getData(function(data) {
   processData(data, function(processedData) {
       saveData(processedData, function(saveData) {
         console.log('Chay xong');
       });
   });
+});
+
+
+async function abc(){
+  // await 
+  return "hello world";
+}
+abc().then((data) => {
+  console.log(data);
+  
 });
