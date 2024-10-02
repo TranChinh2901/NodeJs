@@ -2,6 +2,7 @@
   "name": "learn_nodejs",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
@@ -11,6 +12,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.0",
-    "learn_nodejs": "file:"
+    "learn_nodejs": "file:",
+    "morgan": "^1.10.0"
   }
 }
